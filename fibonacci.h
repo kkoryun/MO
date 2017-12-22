@@ -13,7 +13,7 @@ public:
 		F.push_back(1);
 	}
 
-	void compute() override 
+	void compute() override
 	{
 		size_t N = find_N();
 		double fd;
@@ -25,9 +25,9 @@ public:
 		double Qx = m_func_r1(x);
 		double Qy = m_func_r1(y);
 
-		for (size_t i = 1; i < N-2; i++)
+		for (size_t i = 1; i < N - 2; i++)
 		{
-			if (Qx < Qy) 
+			if (Qx < Qy)
 			{
 				m_b = y;
 				y = x;
@@ -42,7 +42,7 @@ public:
 				x = y;
 				Qx = Qy;
 				fd = static_cast<double>(F[N - i - 2]) / static_cast<double>(F[N - i]);
-				y = x + (m_b-x)*fd;
+				y = x + (m_b - x)*fd;
 				Qy = m_func_r1(y);
 			}
 		}
@@ -55,7 +55,7 @@ public:
 			x = y - m_eps;
 			Qx = m_func_r1(x);
 		}
-		else 
+		else
 		{
 			m_a = x;
 			x = y;
@@ -63,16 +63,23 @@ public:
 			y = x + m_eps;
 			Qy = m_func_r1(y);
 		}
-    }
+		if (Qx < Qy)
+		{
+			m_b = y;
+		}
+		else {
+			m_a = x;
+		}
+	}
 
 private:
-	int find_N() 
+	int find_N()
 	{
 		int i = 0;
 		double d = (m_b - m_a);
-		if (d / F[i]+m_eps <= m_delt) { return i; }
+		if (d / F[i] + m_eps <= m_delt) { return i; }
 		i++;
-		while (d / F[i] + m_eps>m_delt)
+		while (d / F[i] + m_eps > m_delt)
 		{
 			i++;
 			F.push_back(F[i - 1] + F[i - 2]);

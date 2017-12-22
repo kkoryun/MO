@@ -1,7 +1,5 @@
 #pragma once
 
-#include <functional>
-
 #include "method.h"
 
 class Dichotomy:public Method
