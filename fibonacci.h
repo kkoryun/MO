@@ -24,9 +24,10 @@ public:
 		double y = m_a + fib_coef;
 		double Qx = m_func_r1(x);
 		double Qy = m_func_r1(y);
-
+		m_counter++;
 		for (size_t i = 1; i < N - 2; i++)
 		{
+			m_counter++;
 			if (Qx < Qy)
 			{
 				m_b = y;
@@ -45,8 +46,10 @@ public:
 				y = x + (m_b - x)*fd;
 				Qy = m_func_r1(y);
 			}
+		
 		}
 
+		m_counter++;
 		if (Qx < Qy)
 		{
 			m_b = y;

@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="dichotomy.h" />
     <ClInclude Include="fibonacci.h" />
+    <ClInclude Include="golden_ratio.h" />
     <ClInclude Include="method.h" />
     <ClInclude Include="passive.h" />
   </ItemGroup>

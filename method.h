@@ -1,5 +1,7 @@
 #pragma once
+
 #include <functional>
+#include <math.h>
 
 class Method
 {
