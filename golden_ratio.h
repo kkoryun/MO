@@ -7,10 +7,10 @@
 class GoldenRatio : public Method
 {
 public:
-	GoldenRatio(double a, double b, std::function<double(double)> func, 
-		double delt = 0.1, double eps = 0.01) : Method(a, b, func) 
+	GoldenRatio(double a, double b, std::function<double(double)> func,
+		double eps = 0.01, double delt = 0.1) : Method(a, b, func, delt, eps)
 	{
-		m_delt = delt;
+	
 	}
 
 	void compute() override 
@@ -40,9 +40,8 @@ public:
 				y = m_a + (m_b - m_a)*INV_GOLDEN_RATION;
 				Qy = m_func_r1(y);
 			}
+			//std::cout << "interval =[" << m_a << "," << m_b << "] " << "interval length = " << (m_b - m_a) << std::endl;
 		}
 	}
 
-private:
-	double m_delt;
 };

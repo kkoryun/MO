@@ -6,9 +6,10 @@
 class Fibonacci :public Method
 {
 public:
-	Fibonacci(double a, double b, std::function<double(double)> func, double delt = 0.1, double eps = 0.01) :Method(a, b, func)
+	Fibonacci(double a, double b, std::function<double(double)> func,
+		double eps = 0.01, double delt = 0.1) : Method(a, b, func, delt, eps)
 	{
-		m_delt = delt;
+
 		F.push_back(1);
 		F.push_back(1);
 	}
@@ -46,7 +47,7 @@ public:
 				y = x + (m_b - x)*fd;
 				Qy = m_func_r1(y);
 			}
-		
+			//std::cout << "interval =[" << m_a << "," << m_b << "] " << "interval length = " << (m_b - m_a) << std::endl;
 		}
 
 		m_counter++;
@@ -66,6 +67,7 @@ public:
 			y = x + m_eps;
 			Qy = m_func_r1(y);
 		}
+		//std::cout << "interval =[" << m_a << "," << m_b << "] " << "interval length = " << (m_b - m_a) << std::endl;
 		if (Qx < Qy)
 		{
 			m_b = y;
@@ -73,6 +75,7 @@ public:
 		else {
 			m_a = x;
 		}
+		//std::cout << "interval =[" << m_a << "," << m_b << "] " << "interval length = " << (m_b - m_a) << std::endl;
 	}
 
 private:
@@ -89,7 +92,7 @@ private:
 		}
 		return i;
 	}
-	double m_delt;
+
 	std::vector<size_t> F;
 };
 

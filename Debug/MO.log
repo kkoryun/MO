@@ -1,96 +1,12 @@
 ﻿  main.cpp
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\method.h(14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\method.h(15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\dichotomy.h(18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\dichotomy.h(19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\passive.h(37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\passive.h(39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\fibonacci.h(33): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\fibonacci.h(42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\fibonacci.h(55): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\fibonacci.h(63): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\fibonacci.h(71): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\fibonacci.h(74): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\golden_ratio.h(29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\koryu\documents\visual studio 2015\projects\mo\mo\golden_ratio.h(37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-main.cpp(21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-main.cpp(27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-main.cpp(33): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-main.cpp(39): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\type_traits(1376): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\type_traits(1444): note: see reference to function template instantiation 'float std::_Invoker_functor::_Call<_Fx&,_Ty>(_Callable,_Ty &&)' being compiled
-          with
-          [
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,
-              _Ty=double,
-              _Callable=main::<lambda_c1b96fda77a9744d18aaa440909c03cb> &
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\type_traits(1468): note: see reference to function template instantiation 'float std::invoke<_Fx&,_Ty>(_Callable,_Ty &&)' being compiled
-          with
-          [
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,
-              _Ty=double,
-              _Callable=main::<lambda_c1b96fda77a9744d18aaa440909c03cb> &
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(213): note: see reference to function template instantiation '_Rx std::_Invoke_ret<_Rx,_Callable&,_Ty>(std::_Forced<_Rx,false>,_Callable &,_Ty &&)' being compiled
-          with
-          [
-              _Rx=double,
-              _Callable=_Decayed,
-              _Ty=double
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(211): note: while compiling class template member function 'double std::_Func_impl<_Decayed,_Alloc,_Ret,double>::_Do_call(double &&)'
-          with
-          [
-              _Alloc=std::allocator<int>,
-              _Ret=double
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(137): note: see reference to class template instantiation 'std::_Func_impl<_Decayed,_Alloc,_Ret,double>' being compiled
-          with
-          [
-              _Alloc=std::allocator<int>,
-              _Ret=double
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(348): note: see reference to class template instantiation 'std::_Is_large<_Myimpl>' being compiled
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(327): note: see reference to function template instantiation 'void std::_Func_class<_Ret,double>::_Reset_alloc<_Ty,std::allocator<int>>(_Fx &&,const _Alloc &)' being compiled
-          with
-          [
-              _Ret=double,
-              _Ty=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,
-              _Alloc=std::allocator<int>
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(327): note: see reference to function template instantiation 'void std::_Func_class<_Ret,double>::_Reset_alloc<_Ty,std::allocator<int>>(_Fx &&,const _Alloc &)' being compiled
-          with
-          [
-              _Ret=double,
-              _Ty=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,
-              _Alloc=std::allocator<int>
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(498): note: see reference to function template instantiation 'void std::_Func_class<_Ret,double>::_Reset<main::<lambda_c1b96fda77a9744d18aaa440909c03cb>>(_Fx &&)' being compiled
-          with
-          [
-              _Ret=double,
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>
-          ]
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\functional(498): note: see reference to function template instantiation 'void std::_Func_class<_Ret,double>::_Reset<main::<lambda_c1b96fda77a9744d18aaa440909c03cb>>(_Fx &&)' being compiled
-          with
-          [
-              _Ret=double,
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>
-          ]
-  main.cpp(19): note: see reference to function template instantiation 'std::function<double (double)>::function<main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,float,void>(_Fx)' being compiled
-          with
-          [
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>
-          ]
-  main.cpp(19): note: see reference to function template instantiation 'std::function<double (double)>::function<main::<lambda_c1b96fda77a9744d18aaa440909c03cb>,float,void>(_Fx)' being compiled
-          with
-          [
-              _Fx=main::<lambda_c1b96fda77a9744d18aaa440909c03cb>
-          ]
-  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+main.cpp(33): warning C4244: 'argument': conversion from 'std::size_t' to 'float', possible loss of data
+main.cpp(36): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+main.cpp(46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+main.cpp(49): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+main.cpp(57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+main.cpp(60): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+main.cpp(68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+main.cpp(71): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   main.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
   MO.vcxproj -> c:\users\koryu\documents\visual studio 2015\Projects\MO\Debug\MO.exe
   MO.vcxproj -> c:\users\koryu\documents\visual studio 2015\Projects\MO\Debug\MO.pdb (Partial PDB)

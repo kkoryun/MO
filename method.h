@@ -7,13 +7,15 @@ class Method
 {
 public:
 
-    Method(double a, double b, std::function<double(double)> func,double eps = 0.01) 
+    Method(double a, double b, std::function<double(double)> func,double delt = 0.5 ,double eps = 0.001) 
     {
         m_counter = 0;
         m_eps = eps;
+		m_delt = delt;
         m_a = a;
         m_b = b;
         m_func_r1 = func;
+		originInterval = std::pair<double, double>(a, b);
     }
 
     void setEps(double eps) 
@@ -47,12 +49,20 @@ public:
     {
         return;
     }
+
+	void reset()
+	{
+		m_a = originInterval.first;
+		m_b = originInterval.second;
+		m_counter = 0;
+	}
 protected:
     int m_counter ;
-    float m_a;
-    float m_b;
+    double m_a;
+    double m_b;
     double m_eps;
-
+	double m_delt;
+	std::pair<double, double> originInterval;
     std::function<double(double)> m_func_r1;
 };
 
